@@ -10,30 +10,27 @@
   <link rel="icon" type="image/x-icon" href="assets/hero.png">
   <link rel="stylesheet" href="Styles/style.css">
 </head>
-<body class="body">
-  <header>
-    <nav>
-      <h3 class="nav-title">Bangladesh 2.0</h3>
-      <ul>
-        <li><button class="sign-in-btn">Sign in</button></li>
-      </ul>
-    </nav>
-    <div class="banner">
-      <div class="banner-content">
+<body>
+    <header id="header-bar">
+      <h3 id="header-title">Bangladesh 2.0</h3>
+      <button id="sign-in-btn">Sign in</button>
+    </header>
+
+    <nav id="banner">
         <div class="banner-text">
           <h4 class="bangladesh">Bangladesh 2.0</h4>
-          <h1 class="idea">Idea , innovation ,
-            vision and challenges in New Bangladesh.</h1>
+          <h1 class="idea">Idea , innovation ,<br>
+            vision and challenges in <br>New Bangladesh.</h1>
             <button class="btn-primary">Explore New Bangladesh</button>
         </div>
         <img class="banner-image" src="assets/hero.png" alt="jatio sritishoudho image">
-      </div>
-    </div>
-  </header>
+    </nav>
+
   <main>
+
     <section class="section-01">
         <h2 class="headline">Pillars of "Bangladesh 2.0"</h2>
-        <div class="">
+        <div class="division_flex">
           <div class="section-box">
             <ul class="box">
               <li>
@@ -116,15 +113,15 @@
 
 
     <section>
-      <div class="your-opinion">
+        <h3 class="caption">Your Opinion Matters</h3>
         <div class="table-div">
-          <table>
-            <caption>Your Opinion Matters</caption>
+          <div class="table-div-inner">
+          <table class="table">
             <tr>
               <th colspan="2">
                 <ul class="table-ul">
                   <li>Questions</li> 
-                  <li class="">Select Your Option </li>
+                  <li class="option">Select Your Option </li>
                 </ul>
               </th>
             </tr>
@@ -141,8 +138,8 @@
               <td><button class="opinion-button">Yes. I Agree</button></td>
             </tr>
           </table>
+          </div>
         </div>
-      </div>
     </section>
 
     
@@ -151,7 +148,7 @@
         <div>
           <h2 class="recent-news">Recent News</h2>
           <div>
-            <p class="news-para:">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</p>
+            <p class="news-para">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</p>
           </div>
         </div>
       </div>
@@ -161,12 +158,28 @@
 
     <article>
       <div class="news-desk">
-        <div class="hakau-nilam">
-          <ul class="news-flex">
-            <li>
+          <div class="news-flex">
+            <div>
               <img class="satelite-image" src="assets/satelite.png" alt="image">
-            </li>
-            <li>
+            </div>
+            <div>
+              <div class="news-title-div">
+                <h2 class="news-title">Bangladesh Launches New Satellite</h2>
+                <img class="news-chanal-name" src="assets/al-jazeera.png" alt="image">
+                <p>Date: 05/01/2025 Time: 10.25 PM</p>
+                <p class="news-content">Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we,
+                  with a certain degree of justification, be able to speak of humankind as civilized</p>
+                  <button class="btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="news-desk">
+          <div class="news-flex">
+            <div>
               <div class="news-title-div">
                 <h2 class="news-title">Bangladesh Launches New Satellite</h2>
                 <img class="news-chanal-name" src="assets/al-jazeera.png" alt="image">
@@ -175,42 +188,21 @@
                   with a certain degree of justification, be able to speak of humankind as civilized</p>
                   <button class="btn-primary">Read More</button>
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </article>
-
-    <article>
-      <div class="news-desk">
-        <div class="hakau-nilam">
-          <ul class="news-flex">
-            <li>
-              <div class="news-title-div-midle">
-                <h2 class="news-title">Bangladesh Launches New Satellite</h2>
-                <img class="news-chanal-name" src="assets/al-jazeera.png" alt="image">
-                <p>Date: 05/01/2025 Time: 10.25 PM</p>
-                <p>Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we,
-                  with a certain degree of justification, be able to speak of humankind as civilized</p>
-                  <button class="btn-primary">Read More</button>
-              </div>
-            </li>
-            <li>
-              <img class="satelite-image-midle" src="assets/satelite.png" alt="image">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </article>
-
-    <article>
-      <div class="news-desk">
-        <div class="hakau-nilam">
-          <ul class="news-flex">
-            <li>
+            </div>
+            <div>
               <img class="satelite-image" src="assets/satelite.png" alt="image">
-            </li>
-            <li>
+            </div>
+          </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="news-desk">
+          <div class="news-flex">
+            <div>
+              <img class="satelite-image" src="assets/satelite.png" alt="image">
+            </div>
+            <div>
               <div class="news-title-div">
                 <h2 class="news-title">Bangladesh Launches New Satellite</h2>
                 <img class="news-chanal-name" src="assets/al-jazeera.png" alt="image">
@@ -219,9 +211,13 @@
                   with a certain degree of justification, be able to speak of humankind as civilized</p>
                   <button class="btn-primary">Read More</button>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="donate-today">
       </div>
     </article>
 
@@ -230,12 +226,12 @@
         <h2 class="donate-discription">Donate Today</h2>
         <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability.<br>With initiatives in renewable energy, digital transformation, and robust infrastructure.</p>
         <div>
-          <ul class="donate-box">
-            <li class="donate-01">100 Taka</li>
-            <li class="donate-02">200 Taka</li>
-            <li class="donate-01">500 Taka</li>
-            <li class="donate-01">1000 Taka</li>
-          </ul>
+          <div class="donate-box">
+            <div class="donate-01">100 Taka</div>
+            <div class="donate-02">200 Taka</div>
+            <div class="donate-01">500 Taka</div>
+            <div class="donate-01">1000 Taka</div>
+          </div>
         </div>
         <div>
           <input type="text" class="input-donat" placeholder="Other Amount(Taka)">
@@ -255,8 +251,12 @@
           <button style="height: 62px; width: 150px; border-radius: 16px; background-color:#006A50;">
             Donate Now
           </button>
-        <p class="footer-para:">We promise not to spam you!</p>
+        <p class="footer-para">We promise not to spam you!</p>
 
     </div>
   </footer>
+
+  </body>
+  </html>
+  
   

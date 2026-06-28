@@ -1,71 +1,35 @@
 
-.body{
+body{
   background-color: #F5F5F5;
+  width: 100%;
 }
-
-/* shared style */
-.btn-primary{
-  background-color: #006A50;
-  font-weight: 600px;
-  font-size: 18px;
-  color: #FFFFFF;
-  border: none;
-  padding: 17px 34px;
-  border-radius: 8px;
-}
-.btn-primary-01{
-  background-color: #5490F5;
-  font-weight: 600px;
-  font-size: 16px;
-  color: #FFFFFF;
-  border: none;
-  padding: 11px 20px;
-  border-radius: 8px;
-}
-.btn-primary-02{
-  background-color: #09A15C;
-  font-weight: 600px;
-  font-size: 16px;
-  color: #FFFFFF;
-  border: none;
-  padding: 11px 20px;
-  border-radius: 8px;
-}
-.btn-primary-03{
-  background-color: #FFC239;
-  font-weight: 600px;
-  font-size: 16px;
-  color: #FFFFFF;
-  border: none;
-  padding: 11px 20px;
-  border-radius: 8px;
-}
-
 
 
 
 
 /* Nav Styles */
-nav{
+
+#header-bar{
+  background-color: #FFFFFF;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 24px 160px 0px 160px;
-  margin: 0;
   align-items: center;
+  height: 50%;
+  width: 100%;
 }
-.nav-title{
+#header-title{
   font-weight: bold;
   font-size: 32px;
+  margin: 31px 0px 31px 160px;
 }
-nav ul li {
-  list-style: none;
-  font-size: 15px;
-}
-.sign-in-btn{
-  padding: 15px 30px;
-  border-radius: 5px;
+
+#sign-in-btn{ 
+  border-radius: 10px;
   font-weight: 800;
   font-size: 18px;
+  margin: 10px 160px 0px 25px;
+  padding: 10px 25px;
   color: #006A50;
 }
 
@@ -73,26 +37,19 @@ nav ul li {
 
 
 
-
-
-
 /* Banner Style */
-.banner{
-  background-color: #C6E4D6;
-  margin: 20px 160px 80px 160px;
-  border-radius: 24px;
-}
-section > div{
-  display: flex;
-  justify-content: space-around;
-}
-
-.banner> div{
+#banner{
   display: flex;
   justify-content: space-between;
+  /* justify-content: space-around; */
   align-items: center;
-  margin: 20px 100px 10px 60px;
-}
+  gap: 68px;
+  margin: 0px 160px 80px 160px;
+  padding: 80px 60px;
+  background-color: #C6E4D6;
+  margin: 120px 160px 80px 160px;
+  border-radius: 24px;
+} 
 
 .bangladesh{
   font-weight: medium;
@@ -115,9 +72,65 @@ section > div{
 
 
 
+
+
+/* shared style */
+.btn-primary{
+  background-color: #6a001c;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  border: none;
+  padding: 17px 34px;
+  border-radius: 8px;
+}
+.btn-primary-01{
+  background-color: #5490F5;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+.btn-primary-02{
+  background-color: #09A15C;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+.btn-primary-03{
+  background-color: #FFC239;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
 /* Section style */
 .section-01{
-  margin: 80px 160px 0px 160px;
+  margin: 80px 160px;
+}
+
+.division_flex{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 2%;
 }
 
 section div ul li{
@@ -126,7 +139,7 @@ section div ul li{
 .section-box{
   background-color: #FFFFFF;
   height: 260px;
-  width: 380px;
+  width: 24%;
   border-radius: 19px;
 }
 
@@ -140,9 +153,9 @@ section div ul li{
   font-size: 20px;
 }
 .paragraph{
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
-  text-wrap: wrap;
+  word-wrap: break-word;
 }
 
 
@@ -162,7 +175,7 @@ section div ul li{
 }
 
 .section-description{
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   text-align: left;
   margin-top: 12px;
@@ -170,7 +183,8 @@ section div ul li{
 
 .vision-topic{
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 5%;
   margin: 32px 160px;
 
 }
@@ -196,40 +210,53 @@ section div ul li{
   padding: 24px;
 }
 .vision-yunus{
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 20px;
   margin-bottom: 0%;
 }
 .vision-yunus-p{
-  font-size: 16;
+  font-size: 16px;
 margin-top: 0%;
 }
 
 
 /* your opinion style */
 
-caption{
+.caption{
   font-weight: bold;
   font-size: 40px;
   text-align: left;
+  margin: 180px 160px 20px 160px;
 }
-.your-opinion{
-  width: 1575px;
-  height: 450px;
-  background-color: #FFFFFF;
-  margin: 80px 160px 40px 160px;
+.table-div{
+  /* height: 450px; */
+  background-color: #ffffff;
+  margin: 32px 160px 160px 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 16px;
 }
 
-table{
-  width: 1500px;
-  height: 345px;
+.table-div-inner{
   margin: 32px;
 }
+
+
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
 .table-ul{
   display: flex;
   justify-content: space-between;
 }
+
+.option{
+  margin-right: 100px;
+}
+
 th{
   background-color: #C6E4D6;
 }
@@ -269,35 +296,24 @@ td{
 
 
 /* .recent-news-title-style */
-
-article div div ul li{
-  list-style: none;
-}
 .news-desk{
   margin: 20px 160px 20px 160px;
   background-color: #FFFFFF;
   border-radius: 24px;
-  padding: 0%;
+  padding: 45px;
 }
-.hakau-nilam{
-  margin: 0%;
-  padding: 0%;
-}
+
+
 .news-flex{
   display: flex;
-  justify-content: space-between;
-}
-.satelite-image{
-  height: 306px;
-  width: 408px;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   border-radius: 24px;
-  margin: 48px 0px 48px 0px;
 }
-.news-title-div{
-  height: 306px;
-  width: 744px;
-  margin: 48px 450px 48px 48px;
-}
+
+
 .news-title{
   font-weight: bold;
   font-size: 32px;
@@ -307,17 +323,30 @@ article div div ul li{
   height: 40px;
   width: 134px;
 }
-.news-title-div-midle{
-  height: 306px;
-  width: 744px;
-  margin: 48px 45px 48px 0px;
+
+.news-content{
+word-wrap: break-word;
+max-width: 700px;
 }
-.satelite-image-midle{
-  height: 306px;
-  width: 408px;
+
+
+
+
+.news-title-div{
+    margin: 0px;
+    flex: 2;
+}
+
+.satelite-image{
+  max-width: 400px;
+
+  flex: 1;
+  height: auto;
   border-radius: 24px;
-  margin: 48px 48px 48px 45px;
+  margin:  0px;
 }
+
+
 
 
 
@@ -334,6 +363,7 @@ article div div ul li{
 .donate-box{
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 .donate-01{
   border-radius: 16px;
@@ -342,7 +372,6 @@ article div div ul li{
   height: 90px;
   font-weight: bold;
   font-size: 40px;
-  margin-inline: 24px;
   /* padding: 10px; */
   padding-top: 38px;
 }
@@ -353,10 +382,8 @@ article div div ul li{
   height: 90px;
   font-weight: bold;
   font-size: 40px;
-  margin-inline: 24px;
   padding-top: 38px;
   
-  /* padding: 10px; */
 }
 .input-donat{
   height: 45px;
